@@ -25,7 +25,7 @@ namespace MathForGames
             set { _velocity = value; }
         }
           
-        public Player(char icon, float x, float y, float speed, Color color, string name = "Actor" ) 
+        public Player(char icon, float x, float y, float speed, Color color, string name) 
             : base(icon, x, y, color, name)
         {
             _speed = speed;
