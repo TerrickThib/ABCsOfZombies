@@ -4,6 +4,7 @@ using System.Text;
 using MathLibrary;
 using Raylib_cs;
 
+
 namespace MathForGames
 {
     class Player : Actor
@@ -12,7 +13,6 @@ namespace MathForGames
         private Vector2 _velocity;
         public Scene _scene;
         
-
         //Allows us to give _ speed a value
         public float Speed
         {
@@ -50,9 +50,9 @@ namespace MathForGames
             
             if (xDirectionofBullet != 0 || yDirectionofBullet != 0)
             {
-                Projectiles bullet = new Projectiles('.', Position.X, Position.Y, 200, xDirectionofBullet, yDirectionofBullet, Color.YELLOW, "Bullet");
-                bullet.CollisionRadius = 1;
-                _scene.AddActor(bullet);
+                Projectiles bullet = new Projectiles('o', Position.X, Position.Y, 200, xDirectionofBullet, yDirectionofBullet, Color.YELLOW, "Bullet");
+                bullet.CollisionRadius = 5;
+                _scene.AddActor(bullet);                
             }
 
             //Creat a vector that stores the move input            

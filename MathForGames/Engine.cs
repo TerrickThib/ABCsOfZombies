@@ -95,7 +95,7 @@ namespace MathForGames
             //While there is a key in the input bufer read it
             while (Console.KeyAvailable)
             {
-                Console.ReadKey(true);
+                Console.ReadKey(true);                
             }
         }
 
