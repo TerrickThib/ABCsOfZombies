@@ -50,8 +50,8 @@ namespace MathForGames
             
             if (xDirectionofBullet != 0 || yDirectionofBullet != 0)
             {
-                Projectiles bullet = new Projectiles('.', Position.X, Position.Y, 100, xDirectionofBullet, yDirectionofBullet, Color.YELLOW, "Bullet");
-                bullet.CollisionRadius = 10;
+                Projectiles bullet = new Projectiles('.', Position.X, Position.Y, 200, xDirectionofBullet, yDirectionofBullet, Color.YELLOW, "Bullet");
+                bullet.CollisionRadius = 1;
                 _scene.AddActor(bullet);
             }
 

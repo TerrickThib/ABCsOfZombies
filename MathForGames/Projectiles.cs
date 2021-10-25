@@ -43,7 +43,7 @@ namespace MathForGames
 
             //Uses velocity with current Position
             Position += Velocity;
-
+            
             base.Update(deltaTime);
         }
 
@@ -51,7 +51,7 @@ namespace MathForGames
         {
             if (actor is Enemy)
             {
-                
+                Engine.CloseApplication();
             }
         }
         
