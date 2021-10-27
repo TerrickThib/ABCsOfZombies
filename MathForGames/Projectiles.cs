@@ -13,6 +13,7 @@ namespace MathForGames
         private Player _player;
         public int _xdirection;
         public int _ydirection;
+        public Scene _scene;
 
         public float Speed
         {
@@ -26,12 +27,13 @@ namespace MathForGames
             set { _velocity = value; }
         }
 
-        public Projectiles(char icon, float x, float y, float speed,int xdirection, int ydirection, Color color, string name = "Actor") 
+        public Projectiles(char icon, float x, float y, float speed,int xdirection, int ydirection, Color color,Scene scene, string name = "Actor") 
             : base(icon, x, y, color, name)
         {
             _speed = speed;
             _xdirection = xdirection;
             _ydirection = ydirection;
+            _scene = scene;
         }
 
         public override void Update(float deltaTime)
@@ -51,7 +53,7 @@ namespace MathForGames
         {
             if (actor is Enemy)
             {
-                Engine.CloseApplication();
+                _scene.RemoveActor(actor);
             }
         }
         
