@@ -11,7 +11,7 @@ namespace MathForGames
     {
         private float _speed;
         private Vector2 _velocity;
-        public Scene _scene;
+        public Scene _scene;        
         
         //Allows us to give _ speed a value
         public float Speed
@@ -45,7 +45,7 @@ namespace MathForGames
             int xDirectionofBullet = -Convert.ToInt32(Raylib.IsKeyDown(KeyboardKey.KEY_LEFT))
                 + Convert.ToInt32(Raylib.IsKeyDown(KeyboardKey.KEY_RIGHT));
             int yDirectionofBullet = -Convert.ToInt32(Raylib.IsKeyDown(KeyboardKey.KEY_UP))
-                + Convert.ToInt32(Raylib.IsKeyDown(KeyboardKey.KEY_DOWN));            
+                + Convert.ToInt32(Raylib.IsKeyDown(KeyboardKey.KEY_DOWN));           
             
             if (xDirectionofBullet != 0 || yDirectionofBullet != 0)
             {
