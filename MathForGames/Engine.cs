@@ -70,13 +70,13 @@ namespace MathForGames
             enemy.CollisionRadius = 10;
             
             //UI Text Section
-            UIText text = new UIText(10, 10, "TestTextBox", Color.BLUE, 70, 70, 15, "Taco Bell Makes me yell");
+            //UIText text = new UIText(10, 10, "TestTextBox", Color.BLUE, 70, 70, 15, "Taco Bell Makes me yell");
             
             
             //scene.AddActor(actor);            
             scene.AddActor(player);
             scene.AddActor(enemy);
-            scene.AddActor(text);
+            //scene.AddActor(text);
            
             _currentSceneIndex = AddScene(scene);
             _scenes[_currentSceneIndex].Start();

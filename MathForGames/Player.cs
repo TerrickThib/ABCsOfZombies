@@ -45,13 +45,12 @@ namespace MathForGames
             int xDirectionofBullet = -Convert.ToInt32(Raylib.IsKeyDown(KeyboardKey.KEY_LEFT))
                 + Convert.ToInt32(Raylib.IsKeyDown(KeyboardKey.KEY_RIGHT));
             int yDirectionofBullet = -Convert.ToInt32(Raylib.IsKeyDown(KeyboardKey.KEY_UP))
-                + Convert.ToInt32(Raylib.IsKeyDown(KeyboardKey.KEY_DOWN));
-
+                + Convert.ToInt32(Raylib.IsKeyDown(KeyboardKey.KEY_DOWN));            
             
             if (xDirectionofBullet != 0 || yDirectionofBullet != 0)
             {
                 Projectiles bullet = new Projectiles('o', Position.X, Position.Y, 200, xDirectionofBullet, yDirectionofBullet, Color.YELLOW, _scene, "Bullet");
-                bullet.CollisionRadius = 5;
+                bullet.CollisionRadius = 5;               
                 _scene.AddActor(bullet);                
             }
 
