@@ -13,6 +13,8 @@ namespace MathForGames
         public Player _player;
         private float _maxViewingAngle;
         private float _maxSightDistance;
+        private float _enemycooldown = 1;
+        private float _lastenemyspawn = 0;
 
         
         //Allows us to give _ speed a value
@@ -51,6 +53,7 @@ namespace MathForGames
         }
         public override void Update(float deltaTime)
         {
+            
             //Inishalizes distance
             Vector2 distance = new Vector2();
             //Takes players position and eneme position to get differance
